@@ -1,5 +1,9 @@
 # Change
 
+## 3.7.3
+
+- feat(serve): 新增自定义命令参数支持，允许覆盖默认 serve 参数
+
 ## 3.7.2
 
 - chore(dev-server): 移除不再需要的YAML配置文件

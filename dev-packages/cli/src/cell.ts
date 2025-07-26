@@ -62,6 +62,7 @@ const spinner = ora({ text: chalk.italic.gray('loading command line context...\n
     program
         .command('serve')
         .option('-p, --port [port]', 'port used by the server')
+        .option('-c, --command [command]', 'override default serve arguments with a custom command (e.g. "start --dev"), keeping original node and script path for compatibility')
         .description('serve a applicaton')
         .action((entry, options) => {
             serve(context, { entry, ...options });
