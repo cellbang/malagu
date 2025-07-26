@@ -1,5 +1,10 @@
 # Change
 
+## 3.7.2
+
+- chore(dev-server): 移除不再需要的YAML配置文件
+- fix(web): 移除 hooks 目录
+
 ## 3.7.1
 
 - fix(dev-server): 修正后端入口文件路径处理，统一使用 index.js 作为输出文件名

@@ -18,9 +18,7 @@
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
-    "src",
-    "cell.yml",
-    "cell-test-container.yml"
+    "src"
   ],
   "scripts": {
     "build": "cell-component build",
