@@ -1,6 +1,6 @@
 {
   "name": "@celljs/example-sample-app",
-  "version": "3.7.3",
+  "version": "3.7.4",
   "private": true,
   "keywords": [
     "cell-component"
@@ -20,15 +20,15 @@
     "start": "cell serve"
   },
   "dependencies": {
-    "@celljs/core": "3.7.3",
-    "@celljs/react": "3.7.3",
-    "@celljs/rpc": "3.7.3",
-    "@celljs/serve-static": "3.7.3",
+    "@celljs/core": "3.7.4",
+    "@celljs/react": "3.7.4",
+    "@celljs/rpc": "3.7.4",
+    "@celljs/serve-static": "3.7.4",
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@celljs/cli": "3.7.3",
-    "@celljs/cli-service": "3.7.3",
-    "@celljs/dev-server": "3.7.3"
+    "@celljs/cli": "3.7.4",
+    "@celljs/cli-service": "3.7.4",
+    "@celljs/dev-server": "3.7.4"
   }
 }
