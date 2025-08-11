@@ -1,5 +1,9 @@
 # Change
 
+## 3.7.5
+
+- feat(ai): 支持 prediction 参数
+
 ## 3.7.4
 
 - fix(serve): 修正自定义命令参数处理，确保基础参数不被覆盖
