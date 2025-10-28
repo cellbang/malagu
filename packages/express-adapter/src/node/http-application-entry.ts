@@ -13,14 +13,14 @@ container.then(async c => {
     ContainerProvider.set(c);
     await c.get<Application>(Application).start();
     const configProvider = c.get<ConfigProvider>(ConfigProvider);
-    const port = parseInt(process.env.SERVER_PORT || '') || configProvider.get<any>('cell.server', DEFAULT_SERVER_OPTIONS).port;
+    const port = parseInt(process.env.SERVER__PORT || '') || configProvider.get<any>('cell.server', DEFAULT_SERVER_OPTIONS).port;
     const app = express();
     app.all('*', async (req: any, res: any) => {
         const dispatcher = c.get<Dispatcher<Context>>(Dispatcher);
         const httpContext = new Context(req, res);
         Context.run(() => dispatcher.dispatch(httpContext));
     });
-    const server = app.listen(port);
+    const server = app.listen(port, process.env.SERVER__HOST || '127.0.0.1');
     const items = c.getAll<ServerAware>(ServerAware);
     for (const serverAware of items) {
         await serverAware.setServer(server);
