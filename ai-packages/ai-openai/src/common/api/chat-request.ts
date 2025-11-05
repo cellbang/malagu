@@ -289,6 +289,12 @@ export class ChatCompletionRequest {
     prediction?: Prediction | null;
 
     /**
+     * Extra parameters to be added to the request.
+     */
+    @Expose()
+    extra?: Record<string, unknown>;
+
+    /**
      * An optional signal to abort the request.
      */
     @Exclude()
