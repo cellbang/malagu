@@ -155,6 +155,12 @@ export class OpenAIChatOptions implements FunctionCallingOptions {
     prediction?: Prediction | null;
 
     /**
+    * Extra parameters to be added to the request.
+    */
+    @Expose()
+    extra?: Record<string, unknown>;
+
+    /**
      * Tool Function Callbacks to register with the ChatModel.
      */
     @Exclude()
@@ -337,6 +343,11 @@ export class OpenAIOptionsBuilder {
 
     withPrediction(prediction: Prediction | null): OpenAIOptionsBuilder {
         this.options.prediction = prediction;
+        return this;
+    }
+
+    withExtra(extra: Record<string, unknown>): OpenAIOptionsBuilder {
+        this.options.extra = extra;
         return this;
     }
 

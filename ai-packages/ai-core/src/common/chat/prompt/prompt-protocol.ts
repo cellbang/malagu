@@ -16,6 +16,7 @@ export interface ChatOptions extends ModelOptions {
     topK?: number;
     topP?: number;
     prediction?: Prediction | null;
+    extra?: Record<string, unknown>;
 }
 
 export interface Prediction {
